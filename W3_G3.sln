@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceMS", "EcommerceMS\EcommerceMS.csproj", "{7B6E03CD-0767-499D-A19E-D37919300A9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase_Files", "DataBase_Files", "{CB5908AC-0F8D-4019-A0D2-38A88BCAD3F8}"
+	ProjectSection(SolutionItems) = preProject
+		DataBase_Files\Documentation.docx = DataBase_Files\Documentation.docx
+		DataBase_Files\Schema_and_SolveQueries.sql = DataBase_Files\Schema_and_SolveQueries.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6E03CD-0767-499D-A19E-D37919300A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6E03CD-0767-499D-A19E-D37919300A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6E03CD-0767-499D-A19E-D37919300A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6E03CD-0767-499D-A19E-D37919300A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A5D942B-C251-464B-840F-14E3805223A6}
+	EndGlobalSection
+EndGlobal
