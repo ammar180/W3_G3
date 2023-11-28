@@ -40,7 +40,7 @@ create table Sellers(
 )
 insert into Sellers values
 (1, 'reda', '5050');
-
+select * from Sellers
 
 create table Product 
 
@@ -133,7 +133,7 @@ insert into Order_table values
 (717, 17, '2023-12-01', 119.97),
 (718, 18, '2023-12-02', 199.95),
 (719, 19, '2023-12-03', 189.96),
-(720, 20, '2023-12-04', 279.94);
+(720, 20, '2023-12-04', 279.94); 
 create table Order_Details
 (
 	OrderDetailID int ,
