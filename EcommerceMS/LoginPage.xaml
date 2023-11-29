@@ -21,8 +21,8 @@
         <Label x:Name="logLab_Copy1" Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10,197,0,0" Height="30"/>
         <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="205" Height="35" Background="#FF687FF0" Foreground="White" FontSize="24" Grid.Column="1" Click="btn_login_Click"/>
         <ComboBox x:Name="compoBox1" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="130" BorderBrush="#FF687FF0" Height="27" SelectedIndex="0" FontSize="18" SelectionChanged="compoBox1_SelectionChanged">
-            <ComboBoxItem Content="User"/>
-            <ComboBoxItem Content="Admin"/>
+            <ComboBoxItem Content="Customer"/>
+            <ComboBoxItem Content="Seller"/>
         </ComboBox>
         <Button x:Name="btn_forgetPassword" Content="Forget Password?" HorizontalAlignment="Center" Margin="0,284,0,0" VerticalAlignment="Top" Width="176" Height="32" Foreground="Blue" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" Click="btn_forgetPassword_Click">
             <Button.BorderBrush>
