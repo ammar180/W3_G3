@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fca3aecfde0841b1b660432dc6779ff6" Name="Diagram1">
+        <EntityTypeShape EntityType="EcommerceDBModel.Cart" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.Customer" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.Order_Details" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.Order_table" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.Product" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.Seller" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcommerceDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="EcommerceDBModel.FK__Cart__CustomerID__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="EcommerceDBModel.FK__Order_tab__Custo__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="EcommerceDBModel.FK__Order_Det__Order__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="EcommerceDBModel.FK__Order_Det__Produ__5441852A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

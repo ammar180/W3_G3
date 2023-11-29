@@ -9,6 +9,14 @@
       Title="OrderDetailsPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="150*"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="orderGrid" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid x:Name="productGrid" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid x:Name="orderDetialsGrid" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
     </Grid>
 </Page>

@@ -9,6 +9,39 @@
       Title="LoginPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="logLab" Content="Login Page" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="205" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="45,10,0,0" Grid.Column="1" Height="42"/>
+        <TextBox x:Name="txt_userName" HorizontalAlignment="Center" Margin="0,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Grid.Column="1" TextChanged="txt_userName_TextChanged"/>
+        <Label x:Name="logLab_Copy" Content="User Name" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10,147,0,0" Height="30"/>
+        <TextBox x:Name="txt_password" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" Width="432" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Grid.Column="1" TextChanged="txt_password_TextChanged_1" />
+        <Label x:Name="logLab_Copy1" Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="10,197,0,0" Height="30"/>
+        <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="205" Height="35" Background="#FF687FF0" Foreground="White" FontSize="24" Grid.Column="1" Click="btn_login_Click"/>
+        <ComboBox x:Name="compoBox1" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="130" BorderBrush="#FF687FF0" Height="27" SelectedIndex="0" FontSize="18" SelectionChanged="compoBox1_SelectionChanged">
+            <ComboBoxItem Content="User"/>
+            <ComboBoxItem Content="Admin"/>
+        </ComboBox>
+        <Button x:Name="btn_forgetPassword" Content="Forget Password?" HorizontalAlignment="Center" Margin="0,284,0,0" VerticalAlignment="Top" Width="176" Height="32" Foreground="Blue" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" Click="btn_forgetPassword_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.BorderBrush>
+            <Button.OpacityMask>
+                <SolidColorBrush Color="Black" Opacity="1"/>
+            </Button.OpacityMask>
+            <Button.Background>
+                <SolidColorBrush Color="#FFDDDDDD" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_login_Copy" Content="SignUp" HorizontalAlignment="Left" Margin="236,242,0,0" VerticalAlignment="Top" Width="205" Height="35" Background="#FF687FF0" Foreground="White" FontSize="24" Grid.Column="1" Click="btn_singUp_Click"/>
+        <TextBox x:Name="txt_Newpassword" HorizontalAlignment="Left" Margin="10,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Grid.Column="1" TextChanged="txt_Newpassword_TextChanged" Cursor="" Visibility="Hidden"/>
+        <Button x:Name="btn_saveNewPassword" Content="Save" HorizontalAlignment="Left" Margin="240,286,0,0" VerticalAlignment="Top" Width="202" Height="30" Background="#FF687FF0" Foreground="White" FontSize="24" Grid.Column="1" Click="btn_saveNewPassword_Click" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+        <Label x:Name="lab_MoreThan5Chars" Grid.Column="2" Content="More Than 4 Chars" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Width="126" FontSize="14" Foreground="#FFFC1616" Height="29" Visibility="Hidden"/>
+        <Label x:Name="lab_ContainSpec" Grid.Column="2" Content="Contain Special" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top" Width="126" FontSize="14" Foreground="#FFFC1616" Height="29" Visibility="Hidden"/>
+        <Label x:Name="lab_ContainLetters" Grid.Column="2" Content="Contain Letters" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Width="126" FontSize="14" Foreground="#FFFC1616" Height="29" Visibility="Hidden"/>
+        <Label x:Name="lab_ContainDigits" Grid.Column="2" Content="Contain Digits" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Width="126" FontSize="14" Foreground="#FFFC1616" Height="29" Visibility="Hidden"/>
+
     </Grid>
 </Page>
