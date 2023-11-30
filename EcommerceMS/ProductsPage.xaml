@@ -8,7 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ProductsPage">
 
-    <Grid>
-        
+    <Grid Background="#FF4D49A0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="118*"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DG" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="3"/>
+        <Button Content="Search" Margin="16,0,656,9" Height="47" VerticalAlignment="Bottom" FontSize="24" Background="#FFF59181" Click="Button_Click"/>
+        <Label Content="ProductID" Margin="10,17,649,7" FontSize="22" Background="White" Grid.Row="1"/>
+        <Label Content="StockQuantity" Margin="10,16,649,10" FontSize="20" Background="White" Grid.Row="2"/>
+        <TextBox x:Name="IDtext" TextWrapping="Wrap" Margin="190,17,400,7" Background="White" Grid.Row="1" TextChanged="IDtext_TextChanged"/>
+        <TextBox x:Name="Quantitytext" TextWrapping="Wrap" Margin="190,16,400,10" Grid.Row="2" TextChanged="Quantitytext_TextChanged"/>
+        <Button x:Name="btn_buyNow" Content="Buy Now" Margin="464,13,208,13" FontSize="24" Background="#FFF59181" Grid.Row="2" Click="btn_buyNow_Click"/>
+        <TextBox x:Name="Searchtext" TextWrapping="Wrap" Margin="190,20,400,9" TextChanged="Searchtext_TextChanged_1"/>
     </Grid>
 </Page>

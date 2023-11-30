@@ -20,9 +20,30 @@ namespace EcommerceMS
     /// </summary>
     public partial class CustomerProfilePage : Page
     {
-        public CustomerProfilePage()
+        int CustomerID;
+        public CustomerProfilePage(int _CustomerID)
         {
             InitializeComponent();
+            CustomerID = _CustomerID;
+            customerDetailsSetter();
+        }
+
+        private void customerDetailsSetter()
+        {
+            EcommerceDBEntities db = new EcommerceDBEntities();
+            Customer customer = new Customer();
+            customer = db.Customers.FirstOrDefault(x => x.CustomerID == CustomerID);
+            lab_custID.Content += customer.CustomerID.ToString();
+            lab_custName.Content += customer.Name;
+            lab_custEmail.Content += customer.Email;
+            lab_custAddress.Content += customer.Address;
+            lab_custPhone.Content += customer.Phone;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ProductsPage productPage = new ProductsPage();
+            this.NavigationService.Navigate(productPage);
         }
     }
 }
