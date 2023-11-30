@@ -21,12 +21,12 @@ namespace EcommerceMS
     /// </summary>
     public partial class SellerPage : Page
     {
-        EcommerceDBEntities Ed = new EcommerceDBEntities();
+        EcommerceDBEntities entities = new EcommerceDBEntities();
 
         public SellerPage()
         {
             InitializeComponent();
-            Product_Grid.ItemsSource = Ed.Products.ToList();
+            Product_Grid.ItemsSource = entities.Products.ToList();
 
         }
 
@@ -57,44 +57,58 @@ namespace EcommerceMS
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (textbox_id.Text != "")
+            if (txt_productID.Text != "")
             {
                 MessageBox.Show("Id is Atumatic");
 
             }
             Product pro = new Product();
-            pro.Name = textbox_id.Text;
-            pro.ProductID = int.Parse(textbox_id.Text);
-            pro.Description = textbox_id.Text;
+            pro.ProductID = entities.Products.Max(x => x.ProductID) + 1;
+            pro.Name = txt_name.Text;
+            pro.ProductID = int.Parse(txt_productID.Text);
+            pro.Description = txt_des.Text;
             pro.Price = int.Parse(textbox_Price.Text);
             pro.StockQuantity = int.Parse(textbox_Qunitit.Text);
 
-            Ed.Products.Add(pro);
-            Ed.SaveChanges();
+            entities.Products.Add(pro);
+            entities.SaveChanges();
 
             MessageBox.Show("Data save Sucsessfull");
+            Product_Grid.ItemsSource = entities.Products.ToList();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Product p1 = new Product();
-            int depo = int.Parse(textbox_id.Text);
-            p1 = Ed.Products.FirstOrDefault(x => x.ProductID == depo);
-            p1.Name = textbox_id.Text;
-            p1.Price = int.Parse(textbox_Price.Text);
-            p1.Description = textbox_id.Text;
-            p1.StockQuantity = int.Parse(textbox_Qunitit.Text);
-            Ed.Products.AddOrUpdate(p1);
-            Ed.SaveChanges();
-            MessageBox.Show("Go ahead");
+            if (txt_productID == null)
+                MessageBox.Show("please select an ID before update");
+            else
+            {
+                int theID = int.Parse(txt_productID.Text);
+                var prod = entities.Products.FirstOrDefault(x => x.ProductID == theID);
+                if (textbox_Price.Text != string.Empty)
+                    prod.Price = int.Parse(textbox_Price.Text);
+                if (txt_name.Text != string.Empty)
+                    prod.Name = txt_name.Text;
+                if (txt_des.Text != string.Empty)
+                    prod.Description = txt_des.Text;
+                if (textbox_Qunitit.Text != string.Empty)
+                    prod.StockQuantity = int.Parse(textbox_Qunitit.Text);
+
+                entities.Products.AddOrUpdate(prod);
+                entities.SaveChanges();
+                MessageBox.Show("Data Updated Successfully!");
+                Product_Grid.ItemsSource = entities.Products.ToList();
+
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int poe = int.Parse(textbox_id.Text);
-            Product peo = Ed.Products.Remove(Ed.Products.First(x => x.ProductID == poe));
+            int poe = int.Parse(txt_productID.Text);
+            Product peo = entities.Products.Remove(entities.Products.First(x => x.ProductID == poe));
             MessageBox.Show("done delete");
-            Ed.SaveChanges();
+            entities.SaveChanges();
+            Product_Grid.ItemsSource = entities.Products.ToList();
         }
     }
 }

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistrationPage">
 
-    <Grid x:Name="txt_email">
+    <Grid x:Name="theGrid">
         <Label x:Name="logLab" Content="User Registration" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="205" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="292,15,0,0" Height="42"/>
         <TextBox x:Name="txt_userName" HorizontalAlignment="Left" Margin="209,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" TextChanged="txt_userName_TextChanged"/>
         <Label x:Name="logLab_Copy" Content="User Name" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="62,92,0,0" Height="30"/>
@@ -25,17 +25,17 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_login_Copy" Content="SignUp" HorizontalAlignment="Left" Margin="209,380,0,0" VerticalAlignment="Top" Width="354" Height="35" Background="#FF687FF0" Foreground="White" FontSize="24" Click="btn_singUp_Click"/>
+        <Button x:Name="btn_signUp" Content="SignUp" HorizontalAlignment="Left" Margin="209,380,0,0" VerticalAlignment="Top" Width="354" Height="35" Background="#FF687FF0" Foreground="White" FontSize="24" Click="btn_singUp_Click" IsEnabled="False"/>
         <Label x:Name="logLab_Copy2" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="62,148,0,0" Height="30"/>
-        <TextBox x:Name="txt_userName_Copy" HorizontalAlignment="Left" Margin="209,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" TextChanged="txt_email_TextChanged"/>
+        <TextBox x:Name="txt_email" HorizontalAlignment="Left" Margin="209,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" TextChanged="txt_email_TextChanged"/>
         <Label x:Name="logLab_Copy3" Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="62,201,0,0" Height="30"/>
         <Label x:Name="logLab_Copy4" Content="Phone Number" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF687FF0" Foreground="#FFFCFCFC" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Margin="62,256,0,0" Height="30"/>
         <TextBox x:Name="txt_phone" HorizontalAlignment="Left" Margin="209,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" TextChanged="txt_phone_TextChanged"/>
         <TextBox x:Name="txt_address" HorizontalAlignment="Left" Margin="209,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" TextChanged="txt_address_TextChanged"/>
-        <Label Content="More Than 4 Charcters" HorizontalAlignment="Left" Margin="433,147,0,0" VerticalAlignment="Top" Foreground="#FFF90909" FontSize="16"/>
-        <Label Content="Contain Special" HorizontalAlignment="Left" Margin="431,185,0,0" VerticalAlignment="Top" Foreground="#FFF90909" FontSize="16"/>
-        <Label Content="Contain Letters" HorizontalAlignment="Left" Margin="431,225,0,0" VerticalAlignment="Top" Foreground="#FFF90909" FontSize="16"/>
-        <Label Content="Contain Digits" HorizontalAlignment="Left" Margin="432,258,0,0" VerticalAlignment="Top" Foreground="#FFF90909" FontSize="16"/>
+        <Label x:Name="lab_MoreThan5Chars" Content="More Than 4 Chars" HorizontalAlignment="Left" Margin="406,148,0,0" VerticalAlignment="Top" Width="176" FontSize="14" Foreground="#FFFC1616" Height="37" Visibility="Visible"/>
+        <Label x:Name="lab_ContainSpec" Content="Contain Special" HorizontalAlignment="Left" Margin="406,185,0,0" VerticalAlignment="Top" Width="176" FontSize="14" Foreground="#FFFC1616" Height="37" Visibility="Visible"/>
+        <Label x:Name="lab_ContainLetters" Content="Contain Letters" HorizontalAlignment="Left" Margin="406,216,0,0" VerticalAlignment="Top" Width="176" FontSize="14" Foreground="#FFFC1616" Height="36" Visibility="Visible"/>
+        <Label x:Name="lab_ContainDigits" Content="Contain Digits" HorizontalAlignment="Left" Margin="406,246,0,0" VerticalAlignment="Top" Width="176" FontSize="14" Foreground="#FFFC1616" Height="37" Visibility="Visible"/>
 
     </Grid>
 </Page>
