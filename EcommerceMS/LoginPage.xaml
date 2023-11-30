@@ -35,7 +35,7 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_login_Copy" Content="Don`t Have Account?" HorizontalAlignment="Center" Margin="0,301,0,0" VerticalAlignment="Top" Width="240" Height="35" FontSize="24" Click="btn_singUp_Click" Background="{x:Null}" Foreground="#FF0404D8" Grid.Column="1"/>
+        <Button x:Name="btn_login_Copy" Content="Don`t Have Account?" HorizontalAlignment="Left" Margin="85,333,0,0" VerticalAlignment="Top" Width="240" Height="35" FontSize="24" Click="btn_singUp_Click" Background="{x:Null}" Foreground="#FF0404D8" Grid.Column="1"/>
         <TextBox x:Name="txt_Newpassword" HorizontalAlignment="Left" Margin="10,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Grid.Column="1" TextChanged="txt_Newpassword_TextChanged" Cursor="" Visibility="Hidden"/>
         <Button x:Name="btn_saveNewPassword" Content="Save" HorizontalAlignment="Left" Margin="240,286,0,0" VerticalAlignment="Top" Width="202" Height="30" Background="#FF687FF0" Foreground="White" FontSize="24" Grid.Column="1" Click="btn_saveNewPassword_Click" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Visibility="Hidden"/>
         <Label x:Name="lab_MoreThan5Chars" Grid.Column="2" Content="More Than 4 Chars" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Width="126" FontSize="14" Foreground="#FFFC1616" Height="29" Visibility="Hidden"/>
