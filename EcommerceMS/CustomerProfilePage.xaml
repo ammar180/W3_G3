@@ -10,8 +10,8 @@
 
     <Grid Background="#FF4D49A0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="23*"/>
-            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="473*"/>
+            <ColumnDefinition Width="327*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="104*"/>
@@ -20,12 +20,12 @@
             <RowDefinition Height="75*"/>
             <RowDefinition Height="121*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="lab_custID" Content="Customer ID: " Margin="10,45,10,12" FontSize="22" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
-        <Label x:Name="lab_custName" Content="Customer Name: " Margin="10,10,10,19" Grid.Row="1" FontSize="20" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
+        <Label x:Name="lab_custID" Content="Customer ID: " Margin="10,45,10,12" FontSize="24" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
+        <Label x:Name="lab_custName" Content="Customer Name: " Margin="10,10,10,19" Grid.Row="1" FontSize="24" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
         <Label x:Name="lab_custEmail" Content="Email: " Margin="10,10,10,16" Grid.Row="2" FontSize="24" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
-        <Label x:Name="lab_custAddress" Content="Address: " Margin="10,10,10,14" Grid.Row="3" FontSize="20" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
+        <Label x:Name="lab_custAddress" Content="Address: " Margin="10,10,10,14" Grid.Row="3" FontSize="24" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
         <Label x:Name="lab_custPhone" Content="Phone: " Margin="10,10,10,60" Grid.Row="4" FontSize="24" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="-1,-1,5,5"/>
-        <Button Content="Go The Product Page" Margin="28,35,39,24" Grid.Row="4" FontSize="24" Background="#FFF59181" Click="Button_Click" Grid.Column="1" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Go The Product Page" Margin="10,10,10,24" Grid.Row="4" FontSize="24" Background="#FFF59181" Click="Button_Click" Grid.Column="1" RenderTransformOrigin="0.5,0.5"/>
 
     </Grid>
 </Page>

@@ -10,18 +10,18 @@
 
     <Grid Background="#FF4D49A0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="38*"/>
-            <RowDefinition Height="33*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="35*"/>
             <RowDefinition Height="36*"/>
             <RowDefinition Height="118*"/>
         </Grid.RowDefinitions>
         <DataGrid x:Name="DG" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="3"/>
-        <Button Content="Search" Margin="16,0,656,9" Height="47" VerticalAlignment="Bottom" FontSize="24" Background="#FFF59181" Click="Button_Click"/>
-        <Label Content="ProductID" Margin="10,17,649,7" FontSize="22" Background="White" Grid.Row="1"/>
-        <Label Content="StockQuantity" Margin="10,16,649,10" FontSize="20" Background="White" Grid.Row="2"/>
-        <TextBox x:Name="IDtext" TextWrapping="Wrap" Margin="190,17,400,7" Background="White" Grid.Row="1" TextChanged="IDtext_TextChanged"/>
-        <TextBox x:Name="Quantitytext" TextWrapping="Wrap" Margin="190,16,400,10" Grid.Row="2" TextChanged="Quantitytext_TextChanged"/>
-        <Button x:Name="btn_buyNow" Content="Buy Now" Margin="464,13,208,13" FontSize="24" Background="#FFF59181" Grid.Row="2" Click="btn_buyNow_Click"/>
-        <TextBox x:Name="Searchtext" TextWrapping="Wrap" Margin="190,20,400,9" TextChanged="Searchtext_TextChanged_1"/>
+        <Label Content="ProductID" Margin="10,17,628,7" FontSize="22" Grid.Row="1" Background="#FFF59181"/>
+        <Label Content="StockQuantity" Margin="10,16,628,10" FontSize="22" Grid.Row="2" Background="#FFF59181"/>
+        <TextBox x:Name="IDtext" TextWrapping="Wrap" Margin="190,17,374,7" Background="White" Grid.Row="1" TextChanged="IDtext_TextChanged"/>
+        <TextBox x:Name="Quantitytext" TextWrapping="Wrap" Margin="190,16,374,10" Grid.Row="2" TextChanged="Quantitytext_TextChanged"/>
+        <Button x:Name="btn_buyNow" Content="Buy Now" Margin="464,13,173,13" FontSize="24" Background="#FFF59181" Grid.Row="2" Click="btn_buyNow_Click"/>
+        <TextBox x:Name="Searchtext" TextWrapping="Wrap" Margin="216,10,10,12" TextChanged="Searchtext_TextChanged_1"/>
+        <Label Content="Search" Margin="10,0,592,0" Height="48" VerticalAlignment="Center" FontSize="24" Background="#FFF59181" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
     </Grid>
 </Page>

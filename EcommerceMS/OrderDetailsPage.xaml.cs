@@ -38,6 +38,12 @@ namespace EcommerceMS
 
         }
 
+        private void btn_backToProducts_Click(object sender, RoutedEventArgs e)
+        {
+            ProductsPage page = new ProductsPage();
+            NavigationService.Navigate(page);
+        }
+
         private void orderAssign()
         {
             Order_table order = new Order_table();

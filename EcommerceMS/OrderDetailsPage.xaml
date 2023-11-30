@@ -9,6 +9,10 @@
       Title="OrderDetailsPage">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="150*"/>
             <RowDefinition Height="150*"/>
@@ -17,6 +21,7 @@
         <DataGrid x:Name="orderGrid" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <DataGrid x:Name="productGrid" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
         <DataGrid x:Name="orderDetialsGrid" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="btn_backToProducts" Content="Back to Products" Margin="10,39,10,58" FontSize="24" Background="#FFF59181" Grid.Row="1" Click="btn_backToProducts_Click" Grid.Column="1"/>
 
     </Grid>
 </Page>
