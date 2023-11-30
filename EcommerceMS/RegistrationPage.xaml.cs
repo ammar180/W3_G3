@@ -39,5 +39,26 @@ namespace EcommerceMS
         {
 
         }
+
+        private void txt_email_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_address_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_phone_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btn_forgetPassword_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage loginPage = new LoginPage();
+            NavigationService.Navigate(loginPage);
+        }
     }
 }
