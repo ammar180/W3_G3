@@ -24,5 +24,41 @@ namespace EcommerceMS
         {
             InitializeComponent();
         }
+
+        private void btn_singUp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txt_userName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_password_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_email_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_address_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_phone_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void btn_forgetPassword_Click(object sender, RoutedEventArgs e)
+        {
+            LoginPage loginPage = new LoginPage();
+            NavigationService.Navigate(loginPage);
+        }
     }
 }
