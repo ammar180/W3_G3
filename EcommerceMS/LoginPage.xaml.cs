@@ -95,7 +95,6 @@ namespace EcommerceMS
             
             RegistrationPage signUpPage = new RegistrationPage();
             NavigationService.Navigate(signUpPage);
-            
         }
 
         private void txt_Newpassword_TextChanged(object sender, TextChangedEventArgs e)
