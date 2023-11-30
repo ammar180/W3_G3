@@ -24,5 +24,20 @@ namespace EcommerceMS
         {
             InitializeComponent();
         }
+
+        private void btn_singUp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txt_userName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_password_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
